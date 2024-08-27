@@ -38,7 +38,7 @@ class _ResultPageState extends State<ResultPage> {
               width: 350,
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                  color: Colors.greenAccent.withOpacity(0.3),
+                  color: Colors.green.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(16)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

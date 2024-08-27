@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
@@ -12,11 +10,11 @@ class NotificationHandler extends StatefulWidget {
 }
 
 class _NotificationHandlerState extends State<NotificationHandler> {
-  final FirebaseMessaging _fcm = FirebaseMessaging.instance;
+  //final FirebaseMessaging _fcm = FirebaseMessaging.instance;
 
   @override
   void initState() {
-    _fcm.subscribeToTopic('susya');
+    //_fcm.subscribeToTopic('susya');
     // _fcm.
     //   onMessage.listen( message) async {
     //     print("onMessage: $message");
@@ -45,17 +43,17 @@ class _NotificationHandlerState extends State<NotificationHandler> {
     //     print("onResume: $message");
     //   },
     // );
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      print('Got a message whilst in the foreground!');
-      var msg = message.data['body'] ?? ' ';
+    // FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+    //   print('Got a message whilst in the foreground!');
+    //   var msg = message.data['body'] ?? ' ';
 
-      Get.snackbar('Susya Alerts', msg,
-          duration: Duration(seconds: 2), backgroundColor: Colors.white);
+    //   Get.snackbar('Susya Alerts', msg,
+    //       duration: Duration(seconds: 2), backgroundColor: Colors.white);
 
-      if (message.notification != null) {
-        print('Message also contained a notification: ${message.notification}');
-      }
-    });
+    //   if (message.notification != null) {
+    //     print('Message also contained a notification: ${message.notification}');
+    //   }
+    // });
   }
 
   @override

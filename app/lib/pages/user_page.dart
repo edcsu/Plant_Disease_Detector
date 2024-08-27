@@ -126,10 +126,10 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                     )
                   : ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                          Colors.redAccent,
+                        backgroundColor: WidgetStateProperty.all(
+                          Colors.red,
                         ),
-                        shape: MaterialStateProperty.all(
+                        shape: WidgetStateProperty.all(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(26),
                           ),
